@@ -1,0 +1,15 @@
+// import helpers
+@import "helpers/helpers";
+
+//import core
+@import "core/core";
+
+//import modules
+@import "modules/modules";
+
+p {
+	color: blue;
+	box-shadow: 1px 1px 1px 1px #000;
+	  border-radius: 9px;
+	  
+}

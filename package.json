@@ -1,0 +1,21 @@
+{
+  "name": "marzipan",
+  "version": "1.0.0",
+  "description": "Grunt file package for the marzipan subtheme",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-uglify": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
