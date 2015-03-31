@@ -89,9 +89,9 @@ module.exports = function(grunt) {
           browsers: ['last 4 versions']
         },
         single_file: {
-          options: {
+         // options: {
         // Target-specific options go here.
-          },
+        //  },
         src: 'css/style.css',
         dest: 'css/style.css'
       },
