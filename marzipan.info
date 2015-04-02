@@ -14,11 +14,21 @@ regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
+;regions[sidebar_second] = 'Secondary'
+;regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
+
+; Special homepage regions
+regions[hero]    = 'Hero'
+regions[preface_first]    = 'Preface first'
+regions[preface_middle]    = 'Preface middle'
+regions[preface_last]    = 'Preface last'
+
+regions[footer_first]    = 'footer first'
+regions[footer_middle]    = 'footer middle'
+regions[footer_last]    = 'footer last'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets

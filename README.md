@@ -20,6 +20,9 @@ The Drupal bootstrap theme: https://www.drupal.org/project/bootstrap
 
 The jquery update drupal module: https://www.drupal.org/project/jquery_update
 
+Block class module, to enable you to add the bootstrap grid classes to your blocks https://www.drupal.org/project/block_class
+
+Easy way to place images in a block https://www.drupal.org/project/imageblock (optional)
 
 ##Setting up the gems
 
