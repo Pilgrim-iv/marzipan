@@ -61,10 +61,10 @@ function marzipan_preprocess_page(&$variables) {
  */
 function marzipan_process_page(&$variables) {
   $variables['navbar_classes'] = implode(' ', $variables['navbar_classes_array']);
-  $search_box = drupal_render(drupal_get_form('search_form'));
+  $form = drupal_get_form('search_form');
+  $search_box = drupal_render($form);
   $variables['search_box'] = $search_box;
 }
-
 
 /**
  * Implements hook_form_alter().

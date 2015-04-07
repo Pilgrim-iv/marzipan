@@ -9839,6 +9839,11 @@ html body {
   overflow: hidden;
 }
 
+/* line 1, ../scss/core/_layout.scss */
+.container-fluid {
+  max-width: 1300px;
+}
+
 /* line 5, ../scss/core/_layout.scss */
 .main-container {
   padding-bottom: 40px;
@@ -9891,15 +9896,16 @@ img {
   /* line 31, ../scss/modules/_search-box.scss */
   .search-block-custom {
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 50px;
     display: none;
     margin: 0;
     padding: 20px 20px 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 200;
   }
 
-  /* line 41, ../scss/modules/_search-box.scss */
+  /* line 42, ../scss/modules/_search-box.scss */
   .search-block-custom.open {
     display: block;
     -webkit-animation-name: slideInDown;
@@ -9930,5 +9936,5 @@ img {
 
 /* line 8, ../scss/modules/_footer.scss */
 .footer h2 {
-  font-size: 28px;
+  font-size: 20px;
 }

@@ -106,6 +106,9 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+        <button type="button" class="fa fa-search search-btn btn" data-toggle="collapse" data-target=".search-collapse">  </button>
+    <div class="search-block-custom col-md-4"><?php print $search_box; ?></div>
+      </div>
       </div>
     <?php endif; ?>
   </div>
