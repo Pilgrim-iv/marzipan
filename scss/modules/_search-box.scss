@@ -1,6 +1,46 @@
-.block-search {
-	display: none;
-	&.active {
-	display: block;
-	}
+
+//search icon 
+.search-btn {
+display: none;
+}
+
+
+//search-block 
+.search-block-custom {
+padding: 0;
+margin: 0 -15px;
+}
+
+
+
+
+@media screen and (min-width: $container-tablet) {
+
+
+
+.search-btn {
+display: block;
+	position: absolute;
+    right: 15px;
+    top: 7px;
+}
+
+
+
+
+.search-block-custom {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+  margin: 0;
+  padding: $spacing-3 $spacing-3 $spacing-2;
+  background: rgba(0,0,0,0.8);
+}
+
+.search-block-custom.open {
+display: block;
+  @include slideInDown();
+}
+
 }

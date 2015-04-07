@@ -12,9 +12,11 @@
 }
 
 .preface {
-	padding: $spacing-3;
+
 }
 
 @media screen and (min-width: $container-tablet) {
-
+	.preface {
+	padding: $spacing-3;
+}
 }

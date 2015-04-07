@@ -76,7 +76,11 @@ scripts[] = 'javascripts/popover.js'
 scripts[] = 'javascripts/scrollspy.js'
 scripts[] = 'javascripts/tab.js'
 scripts[] = 'javascripts/transition.js'
-;
+
+
+;marzipan scripts
+scripts[] = 'javascripts/marzipan.js'
+
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''
 

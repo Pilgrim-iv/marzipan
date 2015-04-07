@@ -81,7 +81,7 @@
  */
 ?>  
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
       <?php if ($logo): ?>
       <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -94,13 +94,13 @@
       <?php endif; ?>
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle fa fa-bars" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        
       </button>
+
     </div>
+
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
@@ -115,14 +115,18 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+         <button type="button" class="fa fa-search search-btn btn" data-toggle="collapse" data-target=".search-collapse">  </button>
+    <div class="search-block-custom col-md-4"><?php print $search_box; ?></div>
       </div>
     <?php endif; ?>
+
   </div>
-    <button type="button" class="fa fa-search search-btn" data-toggle="collapse" data-target=".search-collapse">
-  </button>
+
+
+  
 </header>
 
-<div class="main-container container">
+<div class="main-container container-fluid">
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
@@ -135,13 +139,13 @@
   <div class="row">
         <div class="hero">
           
-        <img src="sites/all/themes/marzipan/images/hero-img.jpg" alt="" />
-       
+        <img src="<?php echo $directory; ?>/images/hero-img.jpg" alt="" />
+      <!-- http://localhost/sites/all/themes/marzipan/images/hero-img.jpg-->
       </div>
   </div>
 
   <div class="row">
-    <section class="col-sm-12">
+    <section class="preface-region">
       <?php if (!empty($page['preface_first'])): ?>
           <div class="col-md-4">
             <div class="preface">
@@ -177,7 +181,7 @@
     </section>
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer container-fluid">
     <div class="row">
     <section class="col-sm-12">
       <?php if (!empty($page['footer_first'])): ?>

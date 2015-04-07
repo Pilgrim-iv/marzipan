@@ -2,8 +2,11 @@
 add/apply and change the variables for your own theme, as well as keeping them all in one place
 */
 
-//add in font awesome, commented out BS glyphs in bootstrap-custom.scss.
+//add in fonts from google, commented out BS glyphs in bootstrap-custom.scss.
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 @import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
 $bootstrap-sass-asset-helper: false !default;
 //
 // Variables
@@ -49,13 +52,13 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Source Sans Pro", Helvetica, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 

@@ -87,11 +87,9 @@
       <?php endif; ?>
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle fa fa-bars" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+       
       </button>
     </div>
 
@@ -111,11 +109,11 @@
       </div>
     <?php endif; ?>
   </div>
-  <button type="button" class="fa fa-search search-btn" data-toggle="collapse" data-target=".search-collapse">
+  <button type="button" class="fa fa-search btn search-btn" data-toggle="collapse" data-target=".search-collapse">
   </button>
 </header>
 
-<div class="main-container container">
+<div class="main-container container-fluid">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -151,14 +149,14 @@
     </section>
 
     <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3 sidebar" role="complementary">
+      <aside class="col-sm-4 col-md-3 sidebar" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
   </div>
 </div>
-<footer class="footer container">
+<footer class="footer container-fluid">
     <div class="row">
     <section class="col-sm-12">
       <?php if (!empty($page['footer_first'])): ?>

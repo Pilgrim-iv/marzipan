@@ -99,8 +99,8 @@ module.exports = function(grunt) {
   });
 
   // Default task(s).
-  grunt.registerTask('default', ['compass']);
-  grunt.registerTask('viewer', ['watch']);
+  grunt.registerTask('default', ['watch']);
+  //grunt.registerTask('viewer', ['watch']);
   grunt.registerTask('prefix', ['autoprefixer']);
 
 };
